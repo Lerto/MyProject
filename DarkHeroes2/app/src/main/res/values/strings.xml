@@ -1,0 +1,43 @@
+<resources>
+    <string name="main">Главный Экран</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="Splash">Загрузка</string>
+    <string name="About">О программе </string>
+    <string name="About_Pr">
+        <b> Моя Программа : Карточная игра</b>
+    <b>Версия : 0.0.1</b>
+    <b>Автор программы : Кислов лев</b>
+    <b>Описание : описание</b>
+    </string>
+    <string name="title_activity_deck">Колоды</string>
+    <string name="cards1">Карта1</string>
+    <string name="cards2">Карта2</string>
+    <string name="cards3">Карта3</string>
+    <string name="cards4">Карта4</string>
+    <string name="cards5">Карта5</string>
+    <string name="cards6">Карта6</string>
+    <string name="cards7">Карта7</string>
+    <string name="cards8">Карта8</string>
+    <string name="cards9">Карта9</string>
+    <string name="cards10">Карта10</string>
+    <string name="cards11">Карта11</string>
+    <string name="cards12">Карта12</string>
+    <string name="cards13">Карта13</string>
+    <string name="cards14">Карта14</string>
+    <string name="cards15">Карта15</string>
+    <string name="cards16">Карта16</string>
+    <string name="cards17">Карта17</string>
+    <string name="cards18">Карта18</string>
+    <string name="cards19">Карта19</string>
+    <string name="cards20">Карта20</string>
+    <string name="varavar">Воин</string>
+
+    <string name="title_activity_play">Играть</string>
+    <string name="back">Назад</string>
+    <string name="Sound">Звук</string>
+    <string name="Exit">Выход</string>
+    <string name="title_activity_chouse2_deck">Изменение колоды</string>
+
+    <string name="hello_world">Hello world!</string>
+</resources>
