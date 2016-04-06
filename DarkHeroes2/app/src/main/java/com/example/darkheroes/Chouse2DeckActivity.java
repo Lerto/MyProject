@@ -69,18 +69,29 @@ public class Chouse2DeckActivity extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.chouseDeck);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
             ArrayList<HashMap<String, Object>> deckList = new ArrayList<HashMap<String, Object>>();
+            @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 linkedList2.add(linkedList.get(position));
                 HashMap<String, Object> map = new HashMap<String, Object>();
                 map.put("name", linkedList2.get(position).name);
                 deckList.add(map);
-                String from[] = {"name","mana","hp","attack"};
-                int to[] = {R.id.itemname, R.id.itemmana, R.id.itemhp, R.id.itemattack};
+                String from[] = {"name"};
+                int to[] = {R.id.itemname};
                 ListView listView = (ListView) findViewById(R.id.chouseDeck2);
-                SimpleAdapter adapter = new SimpleAdapter(this, deckList, R.layout.itemcard, from, to); //TODO Aktivity (this)?
+                SimpleAdapter adapter = new SimpleAdapter(getBaseContext(), deckList, R.layout.itemcard, from, to);
                 listView.setAdapter(adapter);
+                listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        linkedList2.remove(linkedList2.get(position));
+                        String from[] = {"name"};
+                        int to[] = {R.id.itemname};
+                        ListView listView = (ListView) findViewById(R.id.chouseDeck2);
+                        SimpleAdapter adapter = new SimpleAdapter(getBaseContext(), deckList, R.layout.itemcard, from, to);
+                        listView.setAdapter(adapter);
+                    }
+                });
             }
         });
     }

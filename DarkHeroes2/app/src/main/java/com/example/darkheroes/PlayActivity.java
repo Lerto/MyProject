@@ -17,6 +17,11 @@ public class PlayActivity extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
     }
 
+
+    public void onClick21(View v){
+        Intent intent = new Intent(PlayActivity.this, GameActivity.class);
+        startActivity(intent);
+    }
     public void onClick(View v) {
         finish();
     }
