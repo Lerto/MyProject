@@ -151,9 +151,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="End Turn"
-        android:id="@+id/button5"
+        android:id="@+id/butEndTurn"
         android:onClick="endTurn"
         android:layout_below="@+id/textView4"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="84dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/textViewDeck"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/butEndTurn"
+        android:layout_alignEnd="@+id/butEndTurn" />
 </RelativeLayout>

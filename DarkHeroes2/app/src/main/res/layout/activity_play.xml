@@ -26,9 +26,7 @@
         android:layout_weight="0.30"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_toLeftOf="@+id/button4"
-        android:layout_toStartOf="@+id/button4" />
+        android:layout_alignParentStart="true"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -38,7 +36,7 @@
         android:layout_below="@+id/textView2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/button"
+        android:id="@+id/buttonDontOnly"
         android:onClick="onClick21"/>
 
     <Button
@@ -47,10 +45,10 @@
     android:text="Сетевая игра"
         android:onClick="onClick21"
         android:layout_below="@+id/textView2"
-        android:layout_toRightOf="@+id/button"
+        android:layout_toRightOf="@+id/buttonDontOnly"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:id="@+id/button4" />
+        android:id="@+id/buttonOnly" />
 
 
 </RelativeLayout>
